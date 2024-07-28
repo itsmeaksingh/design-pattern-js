@@ -1,0 +1,21 @@
+- The Gang of Four describe the proxy pattern as:
+    - "Defining a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified "and updated automatically."
+
+- ********** Real Life Uses **********
+- It is heavily used in GUI toolkits and event listener. In java the button(subject) and onClickListener(observer) are modelled with observer pattern.
+
+- Social media, RSS feeds, email subscription in which you have the option to follow or subscribe and you receive latest notification.
+
+- All users of an app on play store gets notified if there is an update.
+
+- PROS:
+    - You can introduce new subscriber classes without having to change the publisher's code (and vice versa if there's a publisher interface)
+    - You can establish relations between objects at runtime.
+
+- CONS:
+    - Because observers don't know about each other, a simple update to an observer might cause a long chain of other updates.
+    - Each observer decides whether it needs to update something when it recieves the notification from the subject that something has changed. Therefore, complicated observers have to do a lot of work to figure out what changed when they receive a notification 
+
+- WHEN:
+    - Use the Observer pattern when changes to the state of one objects may require changing other objects, and the actual set of objects is unknown beforehand or changes dynamically.
+    - Use the pattern when some objects in your app must observe other, but only for a limited time or in specific cases.

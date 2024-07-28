@@ -1,0 +1,15 @@
+- The Gang of Four describe the proxy pattern as:
+        - "avoid coupling the sender of a request and its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it. "
+
+- PROS:
+        - You can control the order of request handing.
+        - You can decouple classes that invoe operations from classes that perform operations.
+        - You can introduce new handlers into the app without breaking the existing client code.
+
+- CONS:
+        - Some requests may endup unhandled.
+
+- WHEN:
+        - When Your program is expected to process different kinds of requests in verious ways, but the exact types of requests and their sequences are unknown beforehand.
+        - Use the pattern when it's essential to execute several handlers in a particular order.
+        - Use the CoR pattern when the set of handlers and their order are supposed to change at runtime. 

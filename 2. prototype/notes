@@ -1,0 +1,21 @@
+- Concept of prototype is to copy an exising object rather then creating a new complex instance from the scratch
+- this approach save your time and object creation is a heavy process (if you object is very very complex)
+
+- Prototype Pattern:
+    - Pros:
+        - Adding and removing products at run-time
+        - you can produce complex objects more conveniently.
+        - Reduce the time complexity of creating complex objects.
+        - We can use this pattern to configure the application with classes dynamically
+        - reduced subclassing 
+    
+    - Cons:
+        - Overkill for a project that uses very few objects and/or does not have an underlying emphasis on the extension of prototype chains
+        - it also hides concrete product classes from the client
+        - Each subclass of Prototype must implement the clone() operation which may be difficult, when the classes under consideration already exist. Also implementing clone() can be difficult when their internals include objects that don't support copying or have circular.
+    
+    - When:
+        - When a system sould be independent of how its products are created, composed, and represented
+        - When the classes to instantiate are specified at run-time, for example, by dynamic loading
+        - to avoid building a class hierarchy of factories that parallels the class hierarchy of products
+        - When instances of a class can have one of only a few different combinations of state. It may be more convenient to install a corresponding number of prototypes and clone them rather than instantiating the class manually, each time.

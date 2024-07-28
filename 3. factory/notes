@@ -1,0 +1,26 @@
+- Gang of four have 4 factry method:
+    - Factory method pattern ----- we are using this now
+    - abstract factory pattern
+    - static factory pattern
+    - simple factory  (or only "factory")
+
+
+- Factory method pattern
+    - define an interface for creating an object, but let subclasses decide which class to instantiate.
+    - Factory Method lets a class defer instantiation to subclasses.
+
+- When you have more object then you need to intentiate in the main index file
+
+
+- PROS
+    - You avoid tight coupling between the creator and the concrete products.
+    - Single Responsibility Principle. You can move the product creation code into one place in the program, making the code easier to support.
+    - Open/Closed Principle. You can introduce new types of products into the program without breaking existing client code.
+
+- CONS
+    - The code may become more complicated since you need to introduce a lot of new subclasses to implement the pattern. The best case scenario is when you’re introducing the pattern into an existing hierarchy of creator classes.
+
+- WHEN
+    - Use the Factory Method when you don't know beforehand the exact types and dependencies of the objects your code should work with.
+    - Use the Factory Method when you want to provide users of your library or framework with a way to extend its internal components.
+    - Use the Factory Method when you want to save system resources by reusing existing objects instead of rebuilding them each time.

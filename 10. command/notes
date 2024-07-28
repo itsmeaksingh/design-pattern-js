@@ -1,0 +1,16 @@
+- The command pattern is a "behavioral design pattern that turns a request into a stand-alone object that contains all information about the request. This transformation lets you parameterize methods with different requests, delay or queue a request’s execution, and support undoable operations."
+
+- PROS:
+    - Reduces coupling the invoker and receiver of command.
+    - Makes our code exentsible as we can add new commands without changing existing code.
+    - You can implement deferred execution of operations
+    - You can assemble a set of simple commands into a complex one.
+
+- CONS:
+    - Increase in the number of classes for each individual command
+    - The code may become more complicated since you're introducing a whole new layer between senders and receivers.
+
+- WHEN:
+    - Use the command pattern when you want to parametrize objects with operations.
+    - Use the command pattern when you want to queue operations, schedule their execution, or execute them remotely.
+    - Use the command pattern when you want to implement reversible operations.

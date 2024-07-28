@@ -1,0 +1,20 @@
+Builder:
+    - Separate the construction of a complex object from its representation so that the same construction process can create different representations
+
+- It is used to solve Telescoping Constructor anti-pattern.
+- Telescoping Constructor anti-pattern:
+    - A class has to many constructors and constructors are 4 or more parameters long it becomes difficult to remember the required order of the parameters as well as what particular constructor you might want in a given situation. Giving yourself & your fellow developers a hard time trying to initialize that class.
+
+
+- PROS:
+    - The parameters to the constructor are reduced and are provided in highly readable method calls.
+    - Builder design pattern also helps in minimizing the number of parameters in constructor and thus there is no need to pass in null for optional parameters to the constructor.
+    - Object is always instantiated in a complete state
+    - Immutable objects can be build without much complex logic in object building process.
+
+- CONS:
+    - The number of lines of code increase at least to double in builder pattern, but the effort pays off in terms of design flexibility and much more readable code.
+    - Requires creating a separete concreteBuilder for each different type of product.
+
+- WHEN: 
+    - Whenever creation of new object requires setting many parameters and some of them (or all of them) are optional

@@ -1,0 +1,16 @@
+- The Gang of Four describe the proxy pattern as:
+    "composing objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly."
+
+- PROS:
+    - Less number of object reduces the momery usage
+    - We can reduce the execution time of our program by sharing objects.
+    - You can work with complex tree structures more conveniently: Use polymorphism and recursion to your advantage.
+    - You can introduce new elements types into the app without breaking the existing code, which now works with the objects tree.
+
+- CONS:
+    - Composite design Pattern makes it harder to restrict the type of components of a composite. So ot should not be used when you don't want to represent a full or partial hierarchy of objects.
+    - Composite Design Pattern can make the design overly general. It makes harder to restrict the components of a composite. Sometimes you want a composite to have only certain components. With Composite, You can't rely in the type system to enforce those constraints for you. Instead you'll have to use run-time checks.
+
+- WHEN:
+    - Use the composite pattern when you hace to implement a tree-like object structure.
+    - Use the pattern when you want the client code to treat both simple and complex elements uniformly.

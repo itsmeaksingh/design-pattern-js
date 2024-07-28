@@ -1,0 +1,22 @@
+- The Objective of a proxy object is to control the creating of and access to the real object object it represents.
+- Suppose you want to restrict that only readme.md file should read not the txt file so for that we can use proxy method.
+
+- PROS:
+    - You can control the service object without clients knowing about it.
+    - You can manage the lifecycle of the service object when clients don't care about it.
+    - The proxy works even if the service object isn't ready or is not available.
+    - you can introduce new proxies without changing the service or clients.
+
+- CONS:
+    - The code may become more complicated since you need to intoduce a lot of new classes.
+    - This pattern intoduces another layer of abstraction which sometimes may be an issue if the RealSubject code is accessed by some of the clients directly and some of them might access the Proxy classes. This might cause disparate behaviour.
+
+- WHEN:
+    - lazy initialization (virual proxy)
+    - Local execution of a remote service(remote proxy)
+    - Caching request results(caching proxy)
+    - Controlling access to the origional object (Protection Proxy)
+    - Firewall proxy
+    - Synchronization Proxy
+    - Smart Reference Proxy
+    - Counting Proxy
