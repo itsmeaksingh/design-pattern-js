@@ -1,10 +1,10 @@
 
 ----------------------- Gang of Four ---------------------------
-Design Patterns:
+- Design Patterns:
 	- For solving the architecture problem we use software patterns
 	- The aim is to persent solution for decupling objects or modules and reducing the overall complexity of your architecture
 
-Design pattern category:
+- Design pattern category:
 	- Creational :
 		- workes with the creation of object instance in our application 
 	- Structural
